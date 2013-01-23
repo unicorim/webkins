@@ -11,7 +11,7 @@ class HTTPMiddleware(object):
     def __call__(self, req):
         url_bits = urlparse.urlsplit(req.url)
         if "facebook.com" in url_bits.netloc:
-            return "access denied"
+            return "<html><head><title>Hello</title></head><body>yo</body></html>"
         else:
             return req.get_response(self._app)
 

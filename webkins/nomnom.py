@@ -9,7 +9,9 @@ class Nomnom:
         omega = str.find(self.lex, "==/Napkin==")
         if alpha and omega:
             return word[:omega]
-
+        else:
+            return "Stick to the Napkin guidelines please"
+        
 word = """#==Napkin==
 #@blah blah
 #@foo  bar 

@@ -1,0 +1,8 @@
+import webkins/nomnom, sys
+
+if sys.ARGV[1]:
+   f = open(sys.ARGV[1]):
+   print f
+else:
+   pass
+

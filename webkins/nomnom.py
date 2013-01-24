@@ -13,6 +13,11 @@ class Nomnom:
             return lex_luther
         else:
             return "Stick to the Napkin guidelines please"
+    
+    def alloc(self):
+        var, keywords = {}, validate(self.lex)
+        print keywords
+        
         
 word = """#==Napkin==
 #@blah blah

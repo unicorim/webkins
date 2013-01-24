@@ -8,7 +8,7 @@ class Nomnom:
         alpha = str.find(self.lex, "==Napkin==")
         omega = str.find(self.lex, "==/Napkin==")
         if alpha and omega:
-            return word[:omega]
+            return word[alpha+len("==Napkin=="):omega-1].strip()
         else:
             return "Stick to the Napkin guidelines please"
         

@@ -1,7 +1,11 @@
-import webkins
+import webkins, sys
 
 def execute():
-    pass
+    try:
+	f = open(sys.argv[1])
+    	print f.read()
+    except IOError:
+    	print "webkins needs a file to drop into the proxy ASAP"
 
 if __name__ == "__main__":
    execute()

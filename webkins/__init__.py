@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 
-from . import *
+__all__ = ['nomnom']
 
 __title__ = 'webkins'
 __version__ = '0.1.4'

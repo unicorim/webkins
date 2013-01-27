@@ -1,8 +1,31 @@
-               __  
-              / _)  <%= About
-     _/\/\/\_/\/      webkins ain't that greasmonkey you've been looking
-   _|   <H>  \/       for, but it rides pretty well on hackasauraus.
- _|  (  | (  |      <%= Run 
-/__.-'|_|--|_|        webkins lives on your browsing experience; it totally
-                      feasts on it! You can run from time to time, or just
-                      keep on it the whole time. Are you ready?
+
+                         WEBKINS~!
+                      __   y 
+                     / _) 
+            _/\/\/\_/\/
+          _|   <H>  \/
+         _|  (  | (  |
+        /__.-'|_|--|_|
+
+   @@ WAT'S DIS?
+     it ain't your average greasemonkey,
+     but it runs on hackasaurus theory!
+     your very own proxy to rewrite web
+     pages as you please! wOoHOOoo!
+
+   @@ Y STAHP? LET GOOO
+     so how you run it? are you excited?
+     are you jumping up&down your seat
+     right now? You better, 'cos dis is
+     how we roll> 
+
+     >>   `python <$>.user.py`
+     &>   + localhost:1024 -> proxy settings
+     &>   .> to http://<$>/ 
+      (where <$> is specified in <$>.user.py)
+     &>   enjoy!!
+
+   @@ re.sub('Z.*?', 'S', 'IZZUEZ')
+     yo, we still @ 0.1, but feel free to
+     open issues on the nice tab on the top
+     or fire at <freddigbjk@gmail.com>

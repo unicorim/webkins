@@ -9,8 +9,8 @@ def yrk(appkin):
     if path == "/*":
         block = string
     else:
-        block = "http://" +  string + path
-    return block
+        block = string + path
+    return "http://" + block
 
 
 class HTTPMiddleware(object):

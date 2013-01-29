@@ -3,16 +3,26 @@ from paste import httpserver
 from paste.proxy import TransparentProxy
 import urlparse
 
+def yrk(appkin):
+    url = urlparse.urlparse(appkin)
+    string, path = url.netloc, url.path
+    if path == "/*":
+        block = string
+    else:
+        block = "http://" +  string + path
+    return block
+
+
 class HTTPMiddleware(object):
-    def __init__(self, app):
+    def __init__(self, app, kin, layer):
         self._app = app
+        self.appkin = kin
+        self.layer = layer
 
     @wsgify
     def __call__(self, req):
-        url_bits = urlparse.urlsplit(req.url)
-        if "facebook.com" in url_bits.netloc:
-            return "<html><head><title>Hello</title></head><body>yo</body></html>"
+        url, irl = yrk(self.appkin), urlparse.urlsplit(req.url)
+        if url in irl.geturl():
+            return self.layer
         else:
-            return req.get_response(self._app)
-
-httpserver.serve(HTTPMiddleware(TransparentProxy()), "0.0.0.0", port=1024)
+            return self._app

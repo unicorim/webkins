@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 
-__all__ = ['nomnom']
+__all__ = ['nomnom', 'kins']
 
 __title__ = 'webkins'
 __version__ = '0.1.4'

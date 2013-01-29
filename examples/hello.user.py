@@ -1,22 +1,5 @@
 
-  # ==Napkin==
-  # @name           Say Hello!
-  # @namespace      https:/github.com/<url>
-  # @description    Greets the world
-  # @include        http://google.com/*
-  # @include        http://facebook.com/*
-  # @exclude        http://yahoo.com/*
-  # @render         hello
-  # ==/Napkin
-  # Notes:
-  #    * is a wildcard character
-  #    Nobody likes yahoo ;)
-  
-  # For the moment, we only allow web remixes. Nothing fancy
-  # like altering DOM. No sir, we still have a lot to go 
-  # before we tame that hackasaurus yet!
-
-  @@ hello
+  @@ http://python.org/hello
   <!DOCTYPE html>
   <html>
     <head>

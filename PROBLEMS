@@ -1,0 +1,11 @@
+webkins PROBLEMS
+===============
+
+Add all your worries here and we'll try fix by the next release
+
+Version 0.1x
+------------
+
+[] Tidy variables and functions - what a big mess!
+[] Auto-download `user.py` scripts in the wild
+[] Rewrite proxy to add support for Werkzeug - need gateway @ localhost:1024

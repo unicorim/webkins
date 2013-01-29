@@ -1,4 +1,4 @@
-import webkins, sys
+import webkins.kins, sys, paste
 
 def execute():
     try:
@@ -6,6 +6,11 @@ def execute():
     	print f.read()
     except IOError:
     	print "webkins needs a file to drop into the proxy ASAP"
+    
+    proxy = webkins.kins.HTTPMiddleware(paste.proxy.TransparentProxy(),
+				  "http://python.org/hello",
+				  "<html><head><title>Hello</title></head><body>yo</body></html>")
+    paste.httpserver.serve(proxy, "0.0.0.0", port=1024) 
 
 if __name__ == "__main__":
    execute()

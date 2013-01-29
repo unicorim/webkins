@@ -3,7 +3,6 @@ import webkins.kins, sys, paste
 def execute():
     try:
 	f = open(sys.argv[1])
-    	print f.read()
     except IOError:
     	print "webkins needs a file to drop into the proxy ASAP"
     

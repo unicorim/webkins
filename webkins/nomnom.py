@@ -10,7 +10,9 @@ def validate(lex):
     else:
         return "Stick to the Napkin guidelines please"
     
-def failsafe(lex):
-    var, keywords = {}, validate(lexlex)
-        
+def ampersat(find):
+    trooper = find[str.find(find, "@@")+2:].strip().splitlines()
+    amp = trooper.pop(0)
+    html = '\n'.join(trooper)
+    return amp, html
         

@@ -1,4 +1,4 @@
-import webkins.kins, sys, paste
+import webkins.kins, sys, paste, webkins.nomnom
 
 def execute():
     try:
@@ -6,9 +6,8 @@ def execute():
     except IOError:
     	print "webkins needs a file to drop into the proxy ASAP"
     
-    proxy = webkins.kins.HTTPMiddleware(paste.proxy.TransparentProxy(),
-				  "http://python.org/hello",
-				  "<html><head><title>Hello</title></head><body>yo</body></html>")
+    g, h = webkins.nomnom.ampersat(f.read())
+    proxy = webkins.kins.HTTPMiddleware(paste.proxy.TransparentProxy(), g, h)
     paste.httpserver.serve(proxy, "0.0.0.0", port=1024) 
 
 if __name__ == "__main__":

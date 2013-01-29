@@ -9,3 +9,4 @@ Version 0.1x
 [] Tidy variables and functions - what a big mess!
 [] Auto-download `user.py` scripts in the wild
 [] Rewrite proxy to add support for Werkzeug - need gateway @ localhost:1024
+[] Add SSL support ~ webkins breaks otherwise
